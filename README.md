@@ -16,7 +16,7 @@ Built with **React**, **Framer Motion**, **GSAP**, and 3D elements using **Splin
 
 💻 **Local Setup**
 
-bash
+```bash
 git clone https://github.com/BitByBit-101/CodeCraft.git
 cd CodeCraft
 npm install
