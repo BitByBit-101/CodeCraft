@@ -7,7 +7,17 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      
+      fontFamily: {
+        eczar: ['Eczar', 'serif'],
+        patrick: ['"Patrick Hand"', 'cursive'],
+        worksans: ['"Work Sans"', 'sans-serif'],
+      },
+      colors: {
+      coffee: '#594F43',
+    },
+    },
   },
   plugins: [],
 }

@@ -1,0 +1,92 @@
+.scroll-strip-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-strip-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7rem;
+  padding: 1rem 1.5rem;
+  width: max-content;
+  justify-content: center;
+}
+
+/* Circle styles */
+.circle {
+  flex-shrink: 0;
+  width: clamp(80px, 20vw, 120px);
+  height: clamp(80px, 20vw, 120px);
+  background-color: #fff7ed;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    border 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 3px solid transparent;
+  transform-origin: center center;
+}
+
+.circle:hover {
+  transform: scale(1.1) !important;
+  border: 3px solid orange;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.4);
+  z-index: 10;
+}
+
+/* Icon styling */
+.skill-icon {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+/* Name styling */
+.skill-name {
+  font-size: clamp(0.6rem, 1.3vw, 0.9rem);
+  font-weight: 600;
+  color: #444;
+}
+
+@media (max-width: 490px) {
+  .scroll-strip-wrapper {
+    padding: 1rem 0;
+    justify-content: center;
+  }
+
+  .scroll-strip-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .circle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .skill-icon {
+    font-size: 1.4rem;
+  }
+
+  .skill-name {
+    font-size: 0.75rem;
+  }
+}

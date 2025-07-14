@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 body{
-  background-color: rgb(0, 0, 0);
+  background-color: #FFEED9;
   padding: 0;
   margin: 0;
   position: relative;
   width: 100%;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  cursor: none;
+  
+}
+::selection {
+  background-color: #ffb6d0; /* custom background */
+  color: #4f3da1;           /* custom text color */
+}
+html, body {
+  overflow-x: clip; /* or hidden */
 }
