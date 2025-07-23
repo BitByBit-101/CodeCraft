@@ -19,28 +19,48 @@ function ShakingIcon({ src, alt, className }) {
 }
 
 /* --------------- reusable card popping in each view --------------- */
-function AnimatedCard({ children, className }) {
-  const ref = useRef(null);
-  const inView = useInView(ref, { margin: "0px 0px -100px 0px" });
+function AnimatedCard({ children, className = "" }) {
   const controls = useAnimation();
+  const ref = useRef(null);
 
   const variants = {
-    hidden: { scale: 0.8, opacity: 0 },
-    show: { scale: 1, opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
+    hidden: {
+      scale: 0.9,
+      opacity: 0,
+      y: 30,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1], 
+      },
+    },
   };
 
-  useEffect(() => {
-    controls.start(inView ? "show" : "hidden");
-  }, [inView, controls]);
-
   return (
-    <motion.div ref={ref} variants={variants} initial="hidden" animate={controls} className={className}>
+    <motion.div
+      ref={ref}
+      variants={variants}
+      initial="hidden"
+      animate={controls}
+      whileInView="show"
+      onViewportLeave={() => controls.start("hidden")}
+      viewport={{ once: false, amount: 0.35 }}
+      whileHover={{ scale: 0.9, rotate: 0.2 }}
+      className={`will-change-transform rounded-2xl shadow-xl font-eczar cursor-pointer transition-transform duration-300 ease-out ${className}`}
+      style={{ transformOrigin: "center center" }}
+    >
       {children}
     </motion.div>
   );
 }
 
-/* --------------- swap two cards in place every 2s (smoother) --------------- */
+
+
+/* --------------- swap two cards in place every 2s --------------- */
 function SwapCards({ children, className }) {
   const [swap, setSwap] = useState(false);
 
@@ -82,10 +102,7 @@ const MyWorks = () => (
     {/* Top 3 cards */}
     <div className="flex flex-col lg:flex-row items-stretch gap-5 px-4 md:px-5 mt-5">
       {/* Weebify */}
-      <AnimatedCard  className="bg-[#ffdab0] rounded-[20px] flex-1 p-7 flex flex-col justify-center 
-             border border-transparent cursor-pointer 
-             transition-transform duration-300 ease-in-out 
-             hover:border-orange-200 hover:scale-90 hover:shadow-md hover:-translate-y-0.5"
+      <AnimatedCard className="bg-[#ffdab0] rounded-[20px] flex-1 p-7 flex flex-col justify-center "
 
 >
         <h1 className="font-eczar text-2xl md:text-3xl text-[#96572a]">
@@ -123,7 +140,7 @@ const MyWorks = () => (
     {/* Bottom section */}
     <div className="flex flex-col lg:flex-row items-start gap-5 px-4 md:px-5 mt-5 w-full mb-6">
       {/* Left grid */}
-      <div className="w-full lg:w-[31%] mx-auto lg:mx-0">
+      <div className="w-full lg:w-[31%] flex justify-center items-center lg:justify-center">
         <RotatingCardGrid />
       </div>
 
@@ -140,18 +157,19 @@ const MyWorks = () => (
       </AnimatedCard>
 
       {/* Right texts – swap animation */}
-      <div className="block lg:w-[37%] w-full mb-10">
-        <SwapCards className="h-40">
-          <div className="h-40 w-full bg-[#ffdbad] rounded-[20px] font-eczar text-xl lg:text-2xl text-[#96572a] flex flex-col justify-center items-center text-center px-4">
-            This isn’t just dev work. It’s pixel poetry with a hint of caffeine.
-            <ShakingIcon src="src/assets/icons/coffee-cup.png" alt="Coffee" className="mt-2 w-10 h-10" />
-          </div>
-          <div className="h-40 w-full bg-[#fec37f] rounded-[20px] font-eczar text-xl lg:text-2xl text-[#90472a] flex flex-col justify-center items-center text-center px-4">
-            Built with Tailwind, animated by GSAP, powered by ‘omg this is cool!’ energy.
-            <ShakingIcon src="src/assets/icons/flash.png" alt="Flash" className="mt-2 w-10 h-10" />
-          </div>
-        </SwapCards>
-      </div>
+      <div className="block w-full lg:w-[37%]">
+  <SwapCards className="h-40 w-full">
+    <div className="h-40 w-full bg-[#ffdbad] rounded-[20px] font-eczar text-base lg:text-xl text-[#96572a] flex flex-col justify-center items-center text-center px-4 break-words">
+      This isn’t just dev work. It’s pixel poetry with a hint of caffeine.
+      <ShakingIcon src="src/assets/icons/coffee-cup.png" alt="Coffee" className="mt-2 w-10 h-10" />
+    </div>
+    <div className="h-40 w-full bg-[#fec37f] rounded-[20px] font-eczar text-base lg:text-xl text-[#90472a] flex flex-col justify-center items-center text-center px-4 break-words">
+      Built with Tailwind, animated by GSAP, powered by ‘omg this is cool!’ energy.
+      <ShakingIcon src="src/assets/icons/flash.png" alt="Flash" className="mt-2 w-10 h-10" />
+    </div>
+  </SwapCards>
+</div>
+
     </div>
   </div>
 );

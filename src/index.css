@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+
+body {
   background-color: #FFEED9;
   padding: 0;
   margin: 0;
@@ -9,12 +10,36 @@ body{
   width: 100%;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
+
 ::selection {
-  background-color: #ffb6d0; /* custom background */
-  color: #4f3da1;           /* custom text color */
+  background-color: #ffb6d0;
+  color: #4f3da1;
 }
-html, body {
-  overflow-x: clip; /* or hidden */
+
+html,
+body {
+  overflow-x: clip;
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 20s linear infinite;
+}
+@keyframes magnify {
+  0%, 100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
 }

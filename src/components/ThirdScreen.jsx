@@ -2,7 +2,6 @@ import Spline from "@splinetool/react-spline";
 import { motion, useAnimation } from "framer-motion";
 import { useRef } from "react";
 
-// slide‑in / fade variant
 const textVariant = {
   hidden: { opacity: 0, y: 40 },
   show: {
@@ -12,12 +11,6 @@ const textVariant = {
   },
 };
 
-/**
- * Reusable text wrapper that
- *  • slides up + fades in when 30 % visible
- *  • resets to "hidden" when it leaves the viewport,
- *    so the animation plays again on re‑entry.
- */
 function AnimatedText({ className, children }) {
   const controls = useAnimation();
   const ref = useRef(null);
@@ -43,37 +36,92 @@ const ThirdScreen = () => {
     <div
       data-scroll
       data-scroll-speed="-0.01"
-      className="relative w-full h-screen bg-[#ea985e] overflow-hidden"
+      className="relative w-full h-auto lg:h-screen bg-[#ea985e] overflow-hidden"
     >
-      {/* 3‑D puffer fish scene */}
-      <Spline scene="https://prod.spline.design/9VaaGl6Px7b7P2NK/scene.splinecode" />
+      {/* 3D Pufferfish */}
+      <div className="absolute inset-0 z-0">
+        <Spline scene="https://prod.spline.design/9VaaGl6Px7b7P2NK/scene.splinecode" />
+      </div>
+      <div className="relative z-10 flex flex-col lg:hidden px-6 pt-12 pb-28 space-y-8">
+        <div className="flex items-center gap-4">
+          <img src="src/assets/images/flower.png" alt="flower" className="w-10 h-10" />
+          <AnimatedText className="text-[#fcebda] font-eczar text-lg font-semibold drop-shadow-md">
+            Click the pufferfish to see it puff up with ideas!
+          </AnimatedText>
+        </div>
 
-      {/* Instruction Text */}
-      <AnimatedText className="absolute top-[10%] left-[5%] w-[80%] md:w-[40vw] text-[#fcebda] font-eczar text-xl md:text-3xl font-semibold drop-shadow-md">
-        Click to inflate the puffer fish
-      </AnimatedText>
+        <div className="flex items-center gap-4">
+          <img src="src/assets/images/carrot.png" alt="carrot" className="w-10 h-10" />
+          <AnimatedText className="text-[#fcebda] font-eczar text-base drop-shadow-md">
+            It’s shy, but full of creativity under pressure.
+          </AnimatedText>
+        </div>
 
-      {/* First Flower Image */}
-      <img
-        className="absolute top-[20%] left-[5%] w-10 h-10 md:w-16 md:h-16"
-        src="src/assets/images/flower.png"
-        alt="flower"
-      />
+        <div className="flex items-center gap-4">
+          <img src="src/assets/images/whale.png" alt="whale" className="w-10 h-10" />
+          <AnimatedText className="text-[#fcebda] font-eczar text-base drop-shadow-md">
+            Puffer fish can inflate to almost three times their normal size to scare off predators.
+          </AnimatedText>
+        </div>
 
-      {/* Fact Text */}
-      <AnimatedText className="absolute top-[20%] right-[1%] w-[80%] md:w-[40vw] text-[#fcebda] font-eczar text-base md:text-2xl drop-shadow-md text-right">
-        Puffer fish can inflate to almost three times their normal size to scare off predators.
-      </AnimatedText>
+        <div className="flex items-start gap-4">
+          <img src="src/assets/images/star_proud.png" alt="star" className="w-10 h-10 mt-1" />
+          <AnimatedText className="text-[#fcebda] font-eczar text-sm drop-shadow-md">
+            With a love for playful design and thoughtful user experiences, I believe—just like
+            this pufferfish—that the right touch can reveal something surprising, delightful, and
+            full of life.
+          </AnimatedText>
+        </div>
 
-      {/* Second Flower Image */}
-      <img
-        className="absolute top-[28%] right-[10%] w-10 h-10 md:w-16 md:h-16"
-        src="src/assets/images/flower.png"
-        alt="flower"
-      />
+        <AnimatedText className="text-[#fcebda] font-eczar text-2xl font-bold text-center drop-shadow-lg w-full pt-6">
+          Playful. Purposeful. Puff-ready.
+        </AnimatedText>
+      </div>
 
-      {/* Colored Bar (same as background) */}
-      <div className="absolute bottom-[1.2%] right-[1%] bg-[#ea985e] w-72 md:w-60 h-12" />
+      <div className="hidden lg:block">
+        <AnimatedText className="absolute top-[10%] left-[5%] w-[40vw] text-[#fcebda] font-eczar text-3xl font-semibold drop-shadow-md">
+          Click the pufferfish to see it puff up with ideas!
+        </AnimatedText>
+        <AnimatedText className="absolute top-[40%] left-[5%] w-[40vw] text-[#fcebda] font-eczar text-xl drop-shadow-md">
+          It’s shy, but full of creativity under pressure.
+        </AnimatedText>
+
+        <img
+          className="absolute top-[15%] left-[12%] w-12 h-12"
+          src="src/assets/images/flower.png"
+          alt="flower"
+        />
+        <img
+          className="absolute top-[45%] left-[15%] w-12 h-12"
+          src="src/assets/images/carrot.png"
+          alt="carrot"
+        />
+
+        <AnimatedText className="absolute top-[20%] right-[1%] w-[40vw] text-[#fcebda] font-eczar text-2xl drop-shadow-md text-center">
+          Puffer fish can inflate to almost three times their normal size to scare off predators.
+        </AnimatedText>
+        <AnimatedText className="absolute top-[40%] right-[1%] w-[30vw] text-[#fcebda] font-eczar text-lg drop-shadow-md text-center">
+          With a love for playful design and thoughtful user experiences, I believe—just like this
+          pufferfish—that the right touch can reveal something surprising, delightful, and full of
+          life.
+        </AnimatedText>
+        <AnimatedText className="absolute top-[80%] w-full text-[#fcebda] font-eczar text-7xl mt-5 drop-shadow-lg text-center">
+          Playful. Purposeful. Puff-ready.
+        </AnimatedText>
+
+        <img
+          className="absolute top-[29%] right-[15%] w-12 h-12"
+          src="src/assets/images/whale.png"
+          alt="whale"
+        />
+        <img
+          className="absolute top-[55%] right-[15%] w-12 h-12"
+          src="src/assets/images/star_proud.png"
+          alt="star"
+        />
+      </div>
+
+      <div className="absolute bottom-[1.6%] sm:bottom-[1.7%] md:bottom-[1.6%] right-[1%] bg-[#ea985e] w-72 lg:w-60 h-12" />
     </div>
   );
 };

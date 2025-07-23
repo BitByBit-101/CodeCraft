@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../InfiniteScroller.css";
 import {
   SiPostman,
@@ -32,7 +32,6 @@ const InfiniteScroller = () => {
     }
   }, []);
 
-// Replace your rows array with:
 const rows = [
   {
     content: [
@@ -69,9 +68,9 @@ const rows = [
     content: [
       "React Router",
       "Firebase SDK",
-      "Visual Studio Code",
+      "Linux",
       "Figma",
-      "Git & GitHub",
+      "Git",
     ],
     direction: "left",
     speed: "fast",

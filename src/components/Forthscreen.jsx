@@ -2,7 +2,6 @@ import Threads from "./reactbits/Backgrounds/Threads/Threads.jsx";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-// Variants for enter/exit from different directions
 const headlineVariant = {
   enterFromBelow: { y: 0, transition: { duration: 0.4, ease: "easeOut" } },
   enterFromAbove: { y: 0, transition: { duration: 0.4, ease: "easeOut" } },
@@ -52,7 +51,6 @@ function AnimatedHeadline({ children }) {
 }
 
 const Forthscreen = () => {
-  // Inject animated gradient keyframes
   useEffect(() => {
     const style = document.createElement("style");
     style.innerHTML = `
@@ -82,7 +80,7 @@ const Forthscreen = () => {
         />
       </div>
 
-      {/* Optional overlay */}
+      {/*overlay */}
       <div className="absolute inset-0 bg-opacity-90 z-10" />
 
       {/* Foreground content */}

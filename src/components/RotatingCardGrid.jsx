@@ -7,7 +7,6 @@ import clsx from "clsx";
  * Usage: <RotatingCardGrid />
  */
 export default function RotatingCardGrid() {
-  // We rely entirely on CSS animation, so no JS logic needed beyond inject style once.
   useEffect(() => {
     const style = document.createElement("style");
     style.innerHTML = `
@@ -31,7 +30,7 @@ export default function RotatingCardGrid() {
       icon: "src/assets/icons/clown-fish (1).png",
     },
     {
-      href: "",
+      href: "https://github.com/BitByBit-101/ByteFolio",
       title: "Bytefolio",
       bg: "bg-[#ffddb6]",
       icon: "src/assets/icons/flower (2).png",
@@ -51,13 +50,13 @@ export default function RotatingCardGrid() {
   ];
 
   return (
-    <div className="relative w-full max-w-md mx-auto aspect-square">
+    <div className="relative aspect-square w-80 sm:w-96 mx-auto md:p-0 p-10">
       {cards.map((card, i) => (
         <a
           key={card.title}
           href={card.href}
           className={clsx(
-            "absolute ml-10 -mr-10 flex flex-col items-center justify-center h-28 w-28 sm:h-[11vw] sm:w-[11vw] rounded-[20px] border border-orange-100 hover:border-[#c53d3d] transition-all duration-300 ease-in-out hover:scale-105",
+            "absolute mx-auto md:ml-5 flex flex-col items-center justify-center h-28 w-28 md:h-40 md:w-40 sm:h-32 sm:w-32 rounded-[20px] border border-orange-100 hover:border-[#c53d3d] transition-all duration-300 ease-in-out hover:scale-105",
             card.bg,
             "text-xl md:text-2xl text-[#915931]"
           )}

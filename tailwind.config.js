@@ -17,6 +17,9 @@ export default {
       colors: {
       coffee: '#594F43',
     },
+    animation: {
+        magnify: 'magnify 2s infinite ease-in-out',
+      },
     },
   },
   plugins: [],

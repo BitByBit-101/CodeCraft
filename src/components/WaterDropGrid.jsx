@@ -1,4 +1,4 @@
-import React from "react";
+
 import anime from "animejs";
 
 const GRID_WIDTH = 25;
