@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation} from "framer-motion";
 import AnimatedLine from "./AnimatedLine";
 import RotatingCardGrid from "./RotatingCardGrid";
 
@@ -93,7 +93,7 @@ const MyWorks = () => (
     {/* Heading */}
     <div className="text-[6vw] font-eczar text-[#fff1e5] px-4 md:ml-5 mb-3 mt-1 md:-mb-4 flex items-center">
       <h1>My Recent Works</h1>
-      <ShakingIcon src="src/assets/icons/donut.png" alt="Hii" className="h-20 w-20 ml-6" />
+      <ShakingIcon src="/icons/donut.png" alt="Hii" className="h-20 w-20 ml-6" />
     </div>
 
     {/* Animated vertical line */}
@@ -120,7 +120,7 @@ const MyWorks = () => (
       <AnimatedCard className="bg-[#fec37f] rounded-[20px] flex-1 p-5 flex flex-col justify-center">
         <h1 className="font-eczar text-2xl md:text-3xl text-[#915931]">
           Bytefolio<i className="text-base text-[#bd6c32]"> - Dev Portfolio</i>
-          <ShakingIcon src="src/assets/icons/apple.png" alt="Apple" className="relative left-56 -top-10 h-10 w-10 ml-6 z-20" />
+          <ShakingIcon src="/icons/apple.png" alt="Apple" className="relative left-56 -top-10 h-10 w-10 ml-6 z-20" />
         </h1>
         <p className="-mt-4 font-eczar text-base text-[#b06533]">A creative portfolio with 3D elements, scroll animations, and a polished design.</p>
         <i className="mt-4 text-sm text-[#875029]">(React, FramerMotion, Spline, GSAP)</i>
@@ -130,7 +130,7 @@ const MyWorks = () => (
       <AnimatedCard className="bg-[#ffc88a] rounded-[20px] flex-1 p-5 flex flex-col justify-center">
         <h1 className="font-eczar text-2xl md:text-3xl text-[#915931]">
           CodeCraft<i className="text-base text-[#bd6c32]"> – Developer Showcase</i>
-          <ShakingIcon src="src/assets/icons/chick.png" alt="Chick" className="relative left-72 -top-10 h-10 w-10 ml-6 z-20" />
+          <ShakingIcon src="/icons/chick.png" alt="Chick" className="relative left-72 -top-10 h-10 w-10 ml-6 z-20" />
         </h1>
         <p className="-mt-4 font-eczar text-base text-[#b06533]">Portfolio project showcasing frontend finesse using GSAP, Framer Motion, and React.</p>
         <i className="mt-4 text-sm text-[#875029]">(React, FramerMotion, Spline, GSAP, ReactBits)</i>
@@ -153,7 +153,7 @@ const MyWorks = () => (
           A smart, location-aware transportation app focused on IIT Mandi. Features include live bus tracking, bookings, emergency alerts, and schedule management.
         </p>
         <i className="mt-4 text-sm text-[#875029]">(Flutter, Firebase, Dart)</i>
-        <ShakingIcon src="src/assets/icons/popsicle.png" alt="Popsicle" className="relative left-40 -top-6 h-16 w-16 ml-6" />
+        <ShakingIcon src="/icons/popsicle.png" alt="Popsicle" className="relative left-40 -top-6 h-16 w-16 ml-6" />
       </AnimatedCard>
 
       {/* Right texts – swap animation */}
@@ -161,11 +161,11 @@ const MyWorks = () => (
   <SwapCards className="h-40 w-full">
     <div className="h-40 w-full bg-[#ffdbad] rounded-[20px] font-eczar text-base lg:text-xl text-[#96572a] flex flex-col justify-center items-center text-center px-4 break-words">
       This isn’t just dev work. It’s pixel poetry with a hint of caffeine.
-      <ShakingIcon src="src/assets/icons/coffee-cup.png" alt="Coffee" className="mt-2 w-10 h-10" />
+      <ShakingIcon src="/icons/coffee-cup.png" alt="Coffee" className="mt-2 w-10 h-10" />
     </div>
     <div className="h-40 w-full bg-[#fec37f] rounded-[20px] font-eczar text-base lg:text-xl text-[#90472a] flex flex-col justify-center items-center text-center px-4 break-words">
       Built with Tailwind, animated by GSAP, powered by ‘omg this is cool!’ energy.
-      <ShakingIcon src="src/assets/icons/flash.png" alt="Flash" className="mt-2 w-10 h-10" />
+      <ShakingIcon src="/icons/flash.png" alt="Flash" className="mt-2 w-10 h-10" />
     </div>
   </SwapCards>
 </div>

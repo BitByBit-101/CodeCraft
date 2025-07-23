@@ -27,25 +27,25 @@ export default function RotatingCardGrid() {
       href: "https://github.com/BitByBit-101/Weebify",
       title: "Weebify",
       bg: "bg-[#ffe7d6]",
-      icon: "src/assets/icons/clown-fish (1).png",
+      icon: "/icons/clown-fish (1).png",
     },
     {
       href: "https://github.com/BitByBit-101/ByteFolio",
       title: "Bytefolio",
       bg: "bg-[#ffddb6]",
-      icon: "src/assets/icons/flower (2).png",
+      icon: "/icons/flower (2).png",
     },
     {
       href: "https://github.com/BitByBit-101/Garud-User-Panel",
       title: "Garud",
       bg: "bg-[#ffe7d6]",
-      icon: "src/assets/icons/bird.png",
+      icon: "/icons/bird.png",
     },
     {
       href: "https://github.com/BitByBit-101/CodeCraft",
       title: "CodeCraft",
       bg: "bg-[#ffddb6]",
-      icon: "src/assets/icons/cat.png",
+      icon: "/icons/cat.png",
     },
   ];
 

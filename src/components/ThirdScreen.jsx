@@ -44,28 +44,28 @@ const ThirdScreen = () => {
       </div>
       <div className="relative z-10 flex flex-col lg:hidden px-6 pt-12 pb-28 space-y-8">
         <div className="flex items-center gap-4">
-          <img src="src/assets/images/flower.png" alt="flower" className="w-10 h-10" />
+          <img src="/images/flower.png" alt="flower" className="w-10 h-10" />
           <AnimatedText className="text-[#fcebda] font-eczar text-lg font-semibold drop-shadow-md">
             Click the pufferfish to see it puff up with ideas!
           </AnimatedText>
         </div>
 
         <div className="flex items-center gap-4">
-          <img src="src/assets/images/carrot.png" alt="carrot" className="w-10 h-10" />
+          <img src="/images/carrot.png" alt="carrot" className="w-10 h-10" />
           <AnimatedText className="text-[#fcebda] font-eczar text-base drop-shadow-md">
             It’s shy, but full of creativity under pressure.
           </AnimatedText>
         </div>
 
         <div className="flex items-center gap-4">
-          <img src="src/assets/images/whale.png" alt="whale" className="w-10 h-10" />
+          <img src="/images/whale.png" alt="whale" className="w-10 h-10" />
           <AnimatedText className="text-[#fcebda] font-eczar text-base drop-shadow-md">
             Puffer fish can inflate to almost three times their normal size to scare off predators.
           </AnimatedText>
         </div>
 
         <div className="flex items-start gap-4">
-          <img src="src/assets/images/star_proud.png" alt="star" className="w-10 h-10 mt-1" />
+          <img src="/images/star_proud.png" alt="star" className="w-10 h-10 mt-1" />
           <AnimatedText className="text-[#fcebda] font-eczar text-sm drop-shadow-md">
             With a love for playful design and thoughtful user experiences, I believe—just like
             this pufferfish—that the right touch can reveal something surprising, delightful, and
@@ -88,12 +88,12 @@ const ThirdScreen = () => {
 
         <img
           className="absolute top-[15%] left-[12%] w-12 h-12"
-          src="src/assets/images/flower.png"
+          src="/images/flower.png"
           alt="flower"
         />
         <img
           className="absolute top-[45%] left-[15%] w-12 h-12"
-          src="src/assets/images/carrot.png"
+          src="/images/carrot.png"
           alt="carrot"
         />
 
@@ -111,12 +111,12 @@ const ThirdScreen = () => {
 
         <img
           className="absolute top-[29%] right-[15%] w-12 h-12"
-          src="src/assets/images/whale.png"
+          src="/images/whale.png"
           alt="whale"
         />
         <img
           className="absolute top-[55%] right-[15%] w-12 h-12"
-          src="src/assets/images/star_proud.png"
+          src="/images/star_proud.png"
           alt="star"
         />
       </div>

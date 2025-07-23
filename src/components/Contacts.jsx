@@ -35,8 +35,8 @@ export default function Contacts() {
           direction="right"
           squareSize={40}
           speed={0.8}
-          borderColor="#8B7171FF"
-          hoverFillColor="#000"
+          borderColor="#8B7171FF" 
+          hoverFillColor="#000" 
           className="w-full h-full"
         />
       </div>
@@ -114,7 +114,7 @@ export default function Contacts() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            src="src/assets/images/Frame 6 9.svg"
+            src="/images/Frame 6 9.svg"
             alt="Contact Illustration"
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain"
           />
@@ -131,7 +131,7 @@ export default function Contacts() {
               I’m just a click away!
             </h1>
             <img
-              src="src/assets/images/cool.png"
+              src="/images/cool.png"
               alt="emoji"
               className="absolute -right-4 bottom-7 h-10"
             />

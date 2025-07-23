@@ -23,7 +23,7 @@ const LandingPageContent = () => {
         {/* Greeting Badge */}
         <div className="flex items-center justify-center gap-2 font-worksans font-semibold text-[#161615] bg-[#FFDDBF] rounded-[8px] h-9 sm:h-10 w-fit px-2 sm:px-3">
           <img
-            src="src/assets/images/wave-hand.png"
+            src="/images/wave-hand.png"
             alt="Wave Icon"
             className="h-5 w-5 sm:h-6 sm:w-6 object-contain"
           />
@@ -99,7 +99,7 @@ const LandingPageContent = () => {
       {/* Right Image */}
       <div className="w-full sm:w-[30vw] lg:w-[45vw] md:w-[30vw] flex justify-center items-center p-2 pt-2 sm:pt-0">
         <img
-          src="src/assets/images/Mask group 2.png"
+          src="/images/Mask group 2.png"
           alt="Cheeko the Puffer Fish"
           className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[550px] max-h-[300px] sm:max-h-none h-auto object-contain"
         />

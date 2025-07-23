@@ -1,11 +1,11 @@
 import { motion, useAnimation } from "framer-motion";
 import { useRef } from "react";
-import scrollIcon from "../assets/icons/scroll.png";
-import portfolioIcon from "../assets/icons/portfolio.png";
-import microappsIcon from "../assets/icons/lightbulb.png";
-import reactIcon from "../assets/icons/software-application.png";
-import flutterIcon from "../assets/icons/flutter.png";
-import dashboardIcon from "../assets/icons/dashboard.png";
+import scrollIcon from "/icons/scroll.png";
+import portfolioIcon from "/icons/portfolio.png";
+import microappsIcon from "/icons/lightbulb.png";
+import reactIcon from "/icons/software-application.png";
+import flutterIcon from "/icons/flutter.png";
+import dashboardIcon from "/icons/dashboard.png";
 
 /* --------------- reusable icon with shake on hover --------------- */
 function ShakingIcon({ src, alt, className }) {
@@ -113,7 +113,7 @@ const WhatIBuild = () => {
 
         {/* star now shakes on hover */}
         <ShakingIcon
-          src="src/assets/images/star_proud.png"
+          src="/images/star_proud.png"
           alt="star icon"
           className="ml-2 w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain"
         />

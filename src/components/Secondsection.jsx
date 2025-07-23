@@ -54,7 +54,7 @@ const Secondsection = () => {
           <i className="text-xl">most of the time</i> ) :
           <img
             className="h-12 w-12 mt-4"
-            src="src/assets/images/smiling.png"
+            src="/images/smiling.png"
             alt="smiling"
           />
         </motion.p>
@@ -71,7 +71,7 @@ const Secondsection = () => {
           actually use (or at least admire and click around on for a bit).
           <img
             className="h-12 w-12 md:h-16 md:w-16 relative md:-right-64 md:bottom-2 right-[-2%] bottom-[-9%] animate-magnify"
-            src="src/assets/images/dog.png"
+            src="/images/dog.png"
             alt="dog"
           />
         </motion.i>
@@ -83,7 +83,7 @@ const Secondsection = () => {
 
         <img
           className="absolute bottom-16 right-8 h-12 w-12 md:h-14 md:w-14 animate-spin-reverse"
-          src="src/assets/images/spiral-galaxy.png"
+          src="/images/spiral-galaxy.png"
           alt="spiral galaxy"
         />
 

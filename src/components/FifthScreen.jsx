@@ -12,7 +12,7 @@ const TestParticles = () => {
       {/* Arrow Section */}
       <section className="min-h-screen flex flex-col items-center justify-center">
         <img
-          src="src/assets/images/down-arrow-orange.png"
+          src="/images/down-arrow-orange.png"
           alt="Down Arrow"
           className="w-10 md:w-20 lg:w-25 h-auto object-contain"
         />
