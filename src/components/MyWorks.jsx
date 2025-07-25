@@ -173,7 +173,7 @@ const MyWorks = () => (
         <ShakingIcon
           src="/icons/popsicle.png"
           alt="Popsicle"
-          className="absolute top-60 right-20 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-16 lg:w-16"
+          className="absolute md:top-60 top-64 right-20 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-16 lg:w-16"
         />
       </AnimatedCard>
 

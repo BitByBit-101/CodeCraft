@@ -126,16 +126,15 @@ export default function Contacts() {
             className="relative"
           >
             <div className="flex justify-center mt-5 px-4">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-eczar text-[#fdc5ab] mb-6 flex items-center text-center">
-    I’m just a click away!
-    <img
-      src="/images/cool.png"
-      alt="emoji"
-      className="h-6 sm:h-8 md:h-10 ml-2 inline-block"
-    />
-  </h1>
-</div>
-
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-eczar text-[#fdc5ab] mb-6 flex items-center text-center">
+                I’m just a click away!
+                <img
+                  src="/images/cool.png"
+                  alt="emoji"
+                  className="h-6 sm:h-8 md:h-10 ml-2 inline-block"
+                />
+              </h1>
+            </div>
           </motion.div>
         </div>
       </div>
