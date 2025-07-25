@@ -98,7 +98,9 @@ const WhatIBuild = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="min-h-screen w-full px-6 py-12 sm:px-12 md:px-20 lg:px-36 bg-[#ffd4af] text-[#1a1a1a] rounded-t-2xl mt-20 overflow-x-hidden"
+      className="w-full min-h-screen md:min-h-0 px-6 py-12 sm:px-10 md:px-16 lg:px-24 bg-[#ffd4af] text-[#1a1a1a] rounded-t-2xl mt-20 overflow-x-hidden"
+
+
     >
       {/* Header */}
       <motion.div
@@ -120,7 +122,7 @@ const WhatIBuild = () => {
       </motion.div>
 
       {/* Card Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-5 mb-12">
         {sections.map(({ title, icon, desc }, i) => (
           <AnimatedCard key={i}>
             <ShakingIcon src={icon} alt={title} className="w-10 h-10 mb-3 object-contain" />

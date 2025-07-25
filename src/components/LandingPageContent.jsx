@@ -16,10 +16,10 @@ const LandingPageContent = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.8"
-      className="min-h-screen flex flex-col-reverse lg:flex-row w-full overflow-visible lg:mt-10 mt-0 mb-16"
+      className="flex flex-col-reverse lg:flex-row w-full min-h-screen overflow-visible px-4 pt-6 pb-10 justify-between"
     >
       {/* Left Section */}
-      <div className="mx-4 sm:mx-6 mt-2 md:mt-10 lg:mt-24 lg:ml-16 lg:mr-10 flex flex-col w-full lg:w-[50vw] pr-7 ">
+      <div className="mx-auto sm:mx-6 mt-4 md:mt-6 lg:mt-20 lg:ml-16 lg:mr-10 flex flex-col w-full lg:w-[50vw] gap-4 mb-6 sm:mb-12">
         {/* Greeting Badge */}
         <div className="flex items-center justify-center gap-2 font-worksans font-semibold text-[#161615] bg-[#FFDDBF] rounded-[8px] h-9 sm:h-10 w-fit px-2 sm:px-3">
           <img
@@ -37,7 +37,7 @@ const LandingPageContent = () => {
         </div>
 
         {/* Main Intro Text */}
-        <div className="w-full mt-5 mb-3">
+        <div className="w-full mt-4 mb-1">
           <SplitText
             text="I'm Bhumika,"
             splitType="chars"
@@ -63,7 +63,7 @@ const LandingPageContent = () => {
         />
 
         {/* Buttons */}
-        <div className="mt-6 sm:mt-8 flex flex-row gap-4 sm:gap-6 w-full items-center mb-10">
+        <div className="mt-6 sm:mt-8 flex flex-row gap-4 sm:gap-6 w-full items-center">
           <a href="https://github.com/BitByBit-101" className={buttonClass1}>
             <span className={textClass1}>View My Work</span>
             <svg
@@ -82,13 +82,14 @@ const LandingPageContent = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/bhumika-meena-a58843359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/bhumika-meena-a58843359"
             className={buttonClass2}
           >
             <span className={textClass2}>Contact Me</span>
           </a>
         </div>
 
+        {/* Optional tagline */}
         <div className="hidden lg:block relative left-[48vw] top-10 overflow-hidden">
           <h1 className="font-patrick text-[1.6vw] text-[#FFDDBF] mt-2">
             I'm Cheeko
@@ -97,11 +98,11 @@ const LandingPageContent = () => {
       </div>
 
       {/* Right Image */}
-      <div className="w-full sm:w-[30vw] lg:w-[45vw] md:w-[30vw] flex justify-center items-center p-2 pt-2 sm:pt-0">
+      <div className="w-full sm:w-[80%] md:w-[40vw] lg:w-[45vw] flex justify-center items-start sm:items-end pt-2">
         <img
           src="/images/Mask group 2.png"
           alt="Cheeko the Puffer Fish"
-          className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-[550px] max-h-[300px] sm:max-h-none h-auto object-contain"
+          className="w-full max-w-[440px] sm:max-w-[500px] md:max-w-[560px] object-contain"
         />
       </div>
     </div>

@@ -93,7 +93,7 @@ const MyWorks = () => (
     className="min-h-screen w-full max-w-[100vw] overflow-x-hidden bg-[#ff9c4c] relative"
   >
     {/* Heading */}
-    <div className="text-[6vw] font-eczar text-[#fff1e5] px-4 md:ml-5 mb-3 mt-1 md:-mb-4 flex items-center">
+    <div className="text-[6vw] font-eczar text-[#fff1e5] px-4 md:ml-5 mb-3 mt-1 md:-mb-1 flex items-center">
       <h1>My Recent Works</h1>
       <ShakingIcon
         src="/icons/donut.png"
@@ -111,13 +111,18 @@ const MyWorks = () => (
       <AnimatedCard className="bg-[#ffdab0] rounded-[20px] flex-1 p-7 flex flex-col justify-center">
         <h1 className="font-eczar text-2xl md:text-3xl text-[#96572a]">
           Weebify
-          <i className="text-base text-[#bd6c32]"> - Anime Discovery/Rating Platform</i>
+          <i className="text-base text-[#bd6c32]">
+            {" "}
+            - Anime Discovery/Rating Platform
+          </i>
         </h1>
         <p className="mt-4 font-eczar text-base md:text-lg text-[#b06533]">
-          An anime hub where users can discover, rate, and review anime, maintain watchlists, and take quizzes.
+          An anime hub where users can discover, rate, and review anime,
+          maintain watchlists, and take quizzes.
         </p>
         <i className="mt-4 text-sm text-[#875029]">
-          (TailwindCSS, Node.js, GSAP, Express.js, LocomotiveScroll, MongoDB + Mongoose)
+          (TailwindCSS, Node.js, GSAP, Express.js, LocomotiveScroll, MongoDB +
+          Mongoose)
         </i>
       </AnimatedCard>
 
@@ -127,9 +132,12 @@ const MyWorks = () => (
           Bytefolio<i className="text-base text-[#bd6c32]"> - Dev Portfolio</i>
         </h1>
         <p className="mt-2 font-eczar text-base text-[#b06533]">
-          A creative portfolio with 3D elements, scroll animations, and a polished design.
+          A creative portfolio with 3D elements, scroll animations, and a
+          polished design.
         </p>
-        <i className="mt-4 text-sm text-[#875029]">(React, FramerMotion, Spline, GSAP)</i>
+        <i className="mt-4 text-sm text-[#875029]">
+          (React, FramerMotion, Spline, GSAP)
+        </i>
         <ShakingIcon
           src="/icons/apple.png"
           alt="Apple"
@@ -140,12 +148,16 @@ const MyWorks = () => (
       {/* CodeCraft */}
       <AnimatedCard className="bg-[#ffc88a] rounded-[20px] flex-1 p-5 flex flex-col justify-center relative">
         <h1 className="font-eczar text-2xl md:text-3xl text-[#915931]">
-          CodeCraft<i className="text-base text-[#bd6c32]"> – Developer Showcase</i>
+          CodeCraft
+          <i className="text-base text-[#bd6c32]"> – Developer Showcase</i>
         </h1>
         <p className="mt-2 font-eczar text-base text-[#b06533]">
-          Portfolio project showcasing frontend finesse using GSAP, Framer Motion, and React.
+          Portfolio project showcasing frontend finesse using GSAP, Framer
+          Motion, and React.
         </p>
-        <i className="mt-4 text-sm text-[#875029]">(React, FramerMotion, Spline, GSAP, ReactBits)</i>
+        <i className="mt-4 text-sm text-[#875029]">
+          (React, FramerMotion, Spline, GSAP, ReactBits)
+        </i>
         <ShakingIcon
           src="/icons/chick.png"
           alt="Chick"
@@ -162,18 +174,33 @@ const MyWorks = () => (
       </div>
 
       {/* Center card */}
-      <AnimatedCard className="w-full lg:w-[32%] bg-[#ffcb9a] rounded-[20px] p-14 flex flex-col justify-center relative">
+      <AnimatedCard className="w-full lg:w-[32%] bg-[#ffcb9a] rounded-[20px] p-8 sm:p-10 md:p-12 lg:p-14 flex flex-col justify-center relative overflow-hidden">
         <h1 className="font-eczar text-2xl md:text-3xl text-[#96572a]">
-          Garud<i className="text-base text-[#bd6c32]"> - Smart Campus Transport App</i>
+          Garud
+          <i className="text-base text-[#bd6c32]">
+            {" "}
+            - Smart Campus Transport App
+          </i>
         </h1>
+
         <p className="mt-4 font-eczar text-base md:text-lg text-[#b06533]">
-          A smart, location-aware transportation app focused on IIT Mandi. Features include live bus tracking, bookings, emergency alerts, and schedule management.
+          A smart, location-aware transportation app focused on IIT Mandi.
+          Features include live bus tracking, bookings, emergency alerts, and
+          schedule management.
         </p>
+
         <i className="mt-4 text-sm text-[#875029]">(Flutter, Firebase, Dart)</i>
+
+        {/* Icon placement */}
         <ShakingIcon
           src="/icons/popsicle.png"
           alt="Popsicle"
-          className="absolute md:top-60 top-64 right-20 h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 lg:h-16 lg:w-16"
+          className="
+      absolute
+      bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8
+      w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16
+      transition-all duration-300
+    "
         />
       </AnimatedCard>
 
@@ -189,7 +216,8 @@ const MyWorks = () => (
             />
           </div>
           <div className="h-40 w-full bg-[#fec37f] rounded-[20px] font-eczar text-base lg:text-xl text-[#90472a] flex flex-col justify-center items-center text-center px-4 break-words">
-            Built with Tailwind, animated by GSAP, powered by ‘omg this is cool!’ energy.
+            Built with Tailwind, animated by GSAP, powered by ‘omg this is
+            cool!’ energy.
             <ShakingIcon
               src="/icons/flash.png"
               alt="Flash"
