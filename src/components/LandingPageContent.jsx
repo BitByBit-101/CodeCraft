@@ -19,7 +19,7 @@ const LandingPageContent = () => {
       className="flex flex-col-reverse lg:flex-row w-full min-h-screen overflow-visible px-4 pt-6 pb-10 justify-between"
     >
       {/* Left Section */}
-      <div className="mx-auto sm:mx-6 mt-4 md:mt-6 lg:mt-20 lg:ml-16 lg:mr-10 flex flex-col w-full lg:w-[50vw] gap-4 mb-6 sm:mb-12">
+      <div className="mx-auto sm:mx-6 mt-10 lg:mt-20 lg:ml-16 lg:mr-10 flex flex-col w-full lg:w-[50vw] gap-4 mb-20 ">
         {/* Greeting Badge */}
         <div className="flex items-center justify-center gap-2 font-worksans font-semibold text-[#161615] bg-[#FFDDBF] rounded-[8px] h-9 sm:h-10 w-fit px-2 sm:px-3">
           <img
@@ -90,7 +90,7 @@ const LandingPageContent = () => {
         </div>
 
         {/* Optional tagline */}
-        <div className="hidden lg:block relative left-[48vw] top-10 overflow-hidden">
+        <div className="hidden lg:block relative left-[46vw] top-10 overflow-hidden">
           <h1 className="font-patrick text-[1.6vw] text-[#FFDDBF] mt-2">
             I'm Cheeko
           </h1>
@@ -98,7 +98,7 @@ const LandingPageContent = () => {
       </div>
 
       {/* Right Image */}
-      <div className="w-full sm:w-[80%] md:w-[40vw] lg:w-[45vw] flex justify-center items-start sm:items-end pt-2">
+      <div className="w-full sm:w-[80%] md:w-[50vw] lg:w-[50vw] flex justify-center items-start sm:items-end pt-2">
         <img
           src="/images/Mask group 2.png"
           alt="Cheeko the Puffer Fish"
