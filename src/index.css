@@ -43,3 +43,14 @@ body {
     transform: scale(1.5);
   }
 }
+
+@media (max-width: 767px) {
+  html {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
+
+  [data-scroll-container] {
+    transform: none !important;
+  }
+}
