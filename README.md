@@ -6,7 +6,7 @@ Welcome to my **personal portfolio website**, built with **React** and powered b
 
 ## 🚀 Live Demo
 
-🔗 <a href="https://code-craft-wp5m.vercel.app/" style="color: #FFA500;">Visit My Portfolio</a>
+🔗 <a href="https://code-craft-n2wl.vercel.app/" style="color: #FFA500;">Visit My Portfolio</a>
 
 ---
 
@@ -59,14 +59,7 @@ A fully responsive layout with consistent styling using **Tailwind CSS** utiliti
 
 ## 🎥 Demo Video
 
-Here’s a full walkthrough of the site in action. The video auto-plays as it scrolls into view.
-
-```html
-<video width="100%" autoplay muted loop playsinline style="margin-top: 20px; border-radius: 8px;">
-  <source src="https://res.cloudinary.com/dqz5j5rla/video/upload/v1721918942/portfolio-demo_nlqphg.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-```
+🔗 <a href="https://drive.google.com/uc?id=1UKC7gSIBU1Wp2iQMnvDeL0YFCWpLw6rH&export=download" style="color: #FFA500;">Demo Video</a>
 
 ---
 
