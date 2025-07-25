@@ -1,65 +1,69 @@
-# 🌐 Personal Portfolio Website
+# 🧡🌐 Personal Portfolio Website
 
-Welcome to my **personal portfolio website**, built with **React** and enhanced using powerful modern front-end tools. This project is a representation of my technical skills, creativity, and attention to user experience.
+Welcome to my **personal portfolio website**, built with **React** and powered by a suite of cutting-edge frontend tools. This project represents my technical depth, visual creativity, and user-first design mindset.
+
+---
 
 ## 🚀 Live Demo
 
-🔗 [Visit My Portfolio](https://code-craft-wp5m.vercel.app/)
+🔗 <a href="https://code-craft-wp5m.vercel.app/" style="color: #FFA500;">Visit My Portfolio</a>
 
 ---
 
 ## ✨ Features
 
-### 🎯 About Me
-A brief but insightful section to introduce who I am, what I do, and what I’m passionate about in the tech world.
+### 🧍‍♀️ About Me
+A brief but impactful section introducing who I am, my tech journey, and what excites me about building things on the web.
 
 ### 🧠 Technical Skills
-A visual and categorized display of the programming languages, tools, frameworks, and platforms I work with regularly.
+A categorized grid of tools, languages, and frameworks I’ve mastered — illustrated for clarity.
 
-### 💼 Projects
-A curated selection of recent projects, each presented with:
-- Project title and short description
-- Technologies used
-- Live link and/or source code link
-- Animated UI interactions
+### 🧰 Projects
+Each project features:
+- 📝 Title and brief summary
+- 🧪 Tech stack used
+- 🔗 Source code / live demo
+- 🎞️ Subtle animations on hover using GSAP and Framer Motion
 
-### 📲 Social Media Integration
-Connect with me on the platforms where I showcase my work and solve coding problems:
-- GitHub for code
-- LinkedIn for professional presence
-- LeetCode for problem-solving skills
+### 🌐 Social Media Integration
+Connect with me via:
+- 🧡 <a href="https://github.com/BitByBit-101" style="color: #FFA500;">GitHub</a>
+- 🧡 <a href="https://www.linkedin.com/in/bhumika-meena-a58843359" style="color: #FFA500;">LinkedIn</a>
+- 🧡 <a href="https://leetcode.com/u/Flamingo289/" style="color: #FFA500;">LeetCode</a>
 
-### 🎮 Animations & Interactions
-- **GSAP & Framer Motion** for fluid, beautiful animations
-- **Spline** for integrating 3D models and assets interactively
-- **Locomotive Scroll** for smooth and inertia-based scrolling transitions
+### 🎮 Animations & Effects
+- ✨ **GSAP + Framer Motion** for rich animations
+- 🧊 **Spline** 3D canvas models
+- 🌀 **Locomotive Scroll** for buttery-smooth inertia scrolling
 
 ### 🧩 Component Architecture
-Built using **React Bits** to modularize components, making the codebase scalable and maintainable.
+Structured with **React Bits** to ensure reusable components and scalable code.
 
-### 🎨 Styling
-Powered by **Tailwind CSS**, enabling quick styling with utility classes, responsive design, and clean layouts.
+### 🎨 Tailwind Theming
+A fully responsive layout with consistent styling using **Tailwind CSS** utilities and custom color palette (orange–white dominant).
 
 ---
 
 ## 📸 Demo Screenshots
 
 <p align="center">
-  <img src="src\assets\demoimages\demo-image-1.png" width="16%" style="margin: 5px;" />
-  <img src="src\assets\demoimages\demo-image-2.png" width="16%" style="margin: 5px;" />
-  <img src="src\assets\demoimages\demo-image-3.png" width="16%" style="margin: 5px;" />
-  <img src="src\assets\demoimages\demo-image-4.png" width="16%" style="margin: 5px;" />
-  <img src="src\assets\demoimages\demo-image-5.png" width="16%" style="margin: 5px;" />
-  <img src="src\assets\demoimages\demo-image-6.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-1.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-2.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-3.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-4.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-5.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-6.png" width="16%" style="margin: 5px;" />
 </p>
 
 ---
 
 ## 🎥 Demo Video
 
+Here’s a full walkthrough of the site in action. The video auto-plays as it scrolls into view.
+
 ```html
-<video width="100%" autoplay muted loop playsinline style="margin-top: 20px;">
-  <source src="https://user-images.githubusercontent.com/demo-video-id/portfolio-demo.mp4" type="video/mp4">
+<video width="100%" autoplay muted loop playsinline style="margin-top: 20px; border-radius: 8px;">
+  <source src="https://res.cloudinary.com/dqz5j5rla/video/upload/v1721918942/portfolio-demo_nlqphg.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 ```
@@ -68,17 +72,13 @@ Powered by **Tailwind CSS**, enabling quick styling with utility classes, respon
 
 ## 📇 Contact & Socials
 
-Feel free to connect or reach out:
-
-- 🔗 [GitHub](https://github.com/BitByBit-101)
-- 💼 [LinkedIn](https://www.linkedin.com/in/bhumika-meena-a58843359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
-- 🧠 [LeetCode](https://leetcode.com/u/Flamingo289/)
+- 🔗 <a href="https://github.com/BitByBit-101" style="color: #FFA500;">GitHub</a>
+- 💼 <a href="https://www.linkedin.com/in/bhumika-meena-a58843359" style="color: #FFA500;">LinkedIn</a>
+- 🧠 <a href="https://leetcode.com/u/Flamingo289/" style="color: #FFA500;">LeetCode</a>
 
 ---
 
 ## 📦 Installation
-
-To run locally:
 
 ```bash
 git clone https://github.com/BitByBit-101/CodeCraft.git
@@ -91,14 +91,14 @@ npm start
 
 ## 🌍 Deployment
 
-Deployed and live on:
-
-- **Vercel**
-
-## 🤝 Contributing
-
-This is a personal project, but I welcome feedback and suggestions! Feel free to open issues or submit pull requests.
+🟠 Hosted live using **Vercel**
 
 ---
 
-Thanks for visiting and checking out my work! 🙌
+## 🤝 Contributing
+
+This is a personal showcase project. Suggestions and improvements are always welcome!
+
+---
+
+Thank you for visiting! 🧡
