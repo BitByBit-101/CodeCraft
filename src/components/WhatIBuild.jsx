@@ -98,7 +98,7 @@ const WhatIBuild = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full min-h-screen md:min-h-0 px-6 py-12 sm:px-10 md:px-16 lg:px-24 bg-[#ffd4af] text-[#1a1a1a] rounded-t-2xl mt-20 overflow-x-hidden"
+      className="w-full min-h-screen md:min-h-0 px-6 py-12 sm:px-10 md:px-16 lg:px-24 bg-[#ffd4af] text-[#1a1a1a] rounded-t-2xl mt-20 overflow-x-hidden scroll-smooth will-change-transform"
 
 
     >

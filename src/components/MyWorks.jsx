@@ -90,7 +90,7 @@ const MyWorks = () => (
   <div
     data-scroll
     data-scroll-speed="0.01"
-    className="min-h-screen w-full max-w-[100vw] overflow-x-hidden bg-[#ff9c4c] relative"
+    className="min-h-screen w-full max-w-[100vw] overflow-x-hidden bg-[#ff9c4c] relative scroll-smooth will-change-transform"
   >
     {/* Heading */}
     <div className="text-[6vw] font-eczar text-[#fff1e5] px-4 md:ml-5 mb-3 mt-1 md:-mb-1 flex items-center">
