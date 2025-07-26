@@ -9,38 +9,26 @@ Welcome to my **personal portfolio website**, built with **React** and powered b
 🔗 <a href="https://code-craft-n2wl.vercel.app/" style="color: #FFA500;">Visit My Portfolio</a>
 
 ---
-
 ## ✨ Features
 
-### 🧍‍♀️ About Me
-A brief but impactful section introducing who I am, my tech journey, and what excites me about building things on the web.
+- 🎯 **Introduction Section** – A brief insight into who I am and what I do.
+- 🛠️ **Technical Skills** – Showcasing my core technologies and tools.
+- 💼 **Projects** – A curated list of my recent projects with brief descriptions and live/demo links.
+- 📲 **Social Links** – Easy access to connect with me via GitHub, LinkedIn, and LeetCode.
+- 🌟 **Smooth Animations** – Built with GSAP, Framer Motion, and Spline for dynamic 3D/interactive visuals.
+- 🌀 **Locomotive Scroll** – Seamless and smooth scrolling experience.
+- 🎨 **Tailwind CSS** – For highly customizable, responsive design.
+- 🧩 **React Bits** – Reusable, optimized React components to keep the UI efficient and modular.
 
-### 🧠 Technical Skills
-A categorized grid of tools, languages, and frameworks I’ve mastered — illustrated for clarity.
+## 🧰 Tech Stack
 
-### 🧰 Projects
-Each project features:
-- 📝 Title and brief summary
-- 🧪 Tech stack used
-- 🔗 Source code / live demo
-- 🎞️ Subtle animations on hover using GSAP and Framer Motion
-
-### 🌐 Social Media Integration
-Connect with me via:
-- 🧡 <a href="https://github.com/BitByBit-101" style="color: #FFA500;">GitHub</a>
-- 🧡 <a href="https://www.linkedin.com/in/bhumika-meena-a58843359" style="color: #FFA500;">LinkedIn</a>
-- 🧡 <a href="https://leetcode.com/u/Flamingo289/" style="color: #FFA500;">LeetCode</a>
-
-### 🎮 Animations & Effects
-- ✨ **GSAP + Framer Motion** for rich animations
-- 🧊 **Spline** 3D canvas models
-- 🌀 **Locomotive Scroll** for buttery-smooth inertia scrolling
-
-### 🧩 Component Architecture
-Structured with **React Bits** to ensure reusable components and scalable code.
-
-### 🎨 Tailwind Theming
-A fully responsive layout with consistent styling using **Tailwind CSS** utilities and custom color palette (orange–white dominant).
+- **React** – JavaScript library for building user interfaces.
+- **GSAP (GreenSock)** – High-performance animations.
+- **Framer Motion** – Declarative animations for React.
+- **Locomotive Scroll** – Smooth scrolling with scroll-based animations.
+- **Spline** – Interactive 3D web elements.
+- **Tailwind CSS** – Utility-first CSS framework.
+- **React Bits** – Handy components and patterns for clean architecture.
 
 ---
 
