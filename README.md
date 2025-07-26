@@ -59,7 +59,7 @@ A fully responsive layout with consistent styling using **Tailwind CSS** utiliti
 
 ## 🎥 Demo Video
 
-🔗 <a href="https://drive.google.com/uc?id=1UKC7gSIBU1Wp2iQMnvDeL0YFCWpLw6rH&export=download" style="color: #FFA500;">Demo Video</a>
+🔗 <a href="https://drive.google.com/uc?id=1CSPRl7vf43FabesN84d_BLHFKQLc7FrF&export=download" style="color: #FFA500;">Demo Video</a>
 
 ---
 
