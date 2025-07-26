@@ -47,12 +47,16 @@ A fully responsive layout with consistent styling using **Tailwind CSS** utiliti
 ## 📸 Demo Screenshots
 
 <p align="center">
-  <img src="src/assets/demoimages/demo-image-1.png" width="16%" style="margin: 5px;" />
-  <img src="src/assets/demoimages/demo-image-2.png" width="16%" style="margin: 5px;" />
-  <img src="src/assets/demoimages/demo-image-3.png" width="16%" style="margin: 5px;" />
-  <img src="src/assets/demoimages/demo-image-4.png" width="16%" style="margin: 5px;" />
-  <img src="src/assets/demoimages/demo-image-5.png" width="16%" style="margin: 5px;" />
-  <img src="src/assets/demoimages/demo-image-6.png" width="16%" style="margin: 5px;" />
+  <img src="src/assets/demoimages/demo-image-1.png" width="45%" style="margin: 10px;" />
+  <img src="src/assets/demoimages/demo-image-2.png" width="45%" style="margin: 10px;" />
+</p>
+<p align="center">
+  <img src="src/assets/demoimages/demo-image-3.png" width="45%" style="margin: 10px;" />
+  <img src="src/assets/demoimages/demo-image-4.png" width="45%" style="margin: 10px;" />
+</p>
+<p align="center">
+  <img src="src/assets/demoimages/demo-image-5.png" width="45%" style="margin: 10px;" />
+  <img src="src/assets/demoimages/demo-image-6.png" width="45%" style="margin: 10px;" />
 </p>
 
 ---
